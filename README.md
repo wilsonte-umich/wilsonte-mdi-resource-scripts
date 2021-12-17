@@ -24,3 +24,17 @@ cd /srv/mdi/resource-scripts
 git clone https://github.com/wilsonte-umich/wilsonte-mdi-resource-scripts.git
 server resource wilsonte-mdi-resource-scripts/<SCRIPT_NAME>.sh
 ```
+
+## Notes
+
+### genomes.sh
+
+Script 'genomes.sh' downloads the entire Illumina iGenomes
+file prior to extracting and keeping only certain annotation files
+and discarding the large genome fasta and index files. Thus, while
+the final disk usage is modest, more drive space is needed to store 
+the interim files. **40 GB** proves sufficient to sequentially install **hg38
+and mm10** onto a barebones server, but more might be needed to accumulate 
+more installed genomes.
+
+
