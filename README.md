@@ -8,7 +8,11 @@ within a standardized design and implementation interface.
 
 This repository contains scripts that can be used to install shared resources,
 e.g., genome files, into AWS EC2 instances that will run a public
-Stage 2 Apps web server. 
+Stage 2 Apps web server. The resulting file structure is consistent with
+the expectations of resource file paths of the following suite repos:
+
+<https://github.com/wilsonte-umich/wilsonte-mdi-pipelines.git>
+<https://github.com/wilsonte-umich/wilsonte-mdi-apps.git>
 
 ## Usage
 
