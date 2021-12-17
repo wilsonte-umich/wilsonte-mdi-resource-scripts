@@ -49,7 +49,8 @@ tar xzf *.tar.gz \
   --exclude "*.fa" \
   --exclude "*/Bowtie2Index/*" \
   --exclude "*/BWAIndex/version*/*" \
-  --exclude "*/BowtieIndex/*"
+  --exclude "*/BowtieIndex/*" \
+  --exclude "*/Variation/snp*"
 checkPipe
 unlink *.tar.gz
 checkPipe
@@ -72,38 +73,18 @@ echo
 # [wilsonte@wilsonte-n1 hg38]$ find . -type f -size +100M
 # ./Annotation/Archives/archive-2015-08-14-08-18-15/Genes/genes.gtf
 # ./Annotation/Archives/archive-2015-08-14-08-18-15/Genes.gencode/genes.gtf
-# ./Sequence/Bowtie2Index/genome.1.bt2
-# ./Sequence/Bowtie2Index/genome.rev.2.bt2
-# ./Sequence/Bowtie2Index/genome.rev.1.bt2
-# ./Sequence/Bowtie2Index/genome.4.bt2
-# ./Sequence/Bowtie2Index/genome.2.bt2
-# ./Sequence/BWAIndex/version0.5.x/genome.fa.sa
-# ./Sequence/BWAIndex/version0.5.x/genome.fa.bwt
-# ./Sequence/BWAIndex/version0.5.x/genome.fa.rbwt
-# ./Sequence/BWAIndex/version0.5.x/genome.fa.pac
-# ./Sequence/BWAIndex/version0.5.x/genome.fa.rpac
-# ./Sequence/BWAIndex/version0.5.x/genome.fa.rsa
-# ./Sequence/BWAIndex/version0.6.0/genome.fa.sa
-# ./Sequence/BWAIndex/version0.6.0/genome.fa.bwt
-# ./Sequence/BWAIndex/version0.6.0/genome.fa.pac
-# ./Sequence/Chromosomes/chr5.fa
-# ./Sequence/Chromosomes/chr3.fa
-# ./Sequence/Chromosomes/chr2.fa
-# ./Sequence/Chromosomes/chr6.fa
-# ./Sequence/Chromosomes/chr12.fa
-# ./Sequence/Chromosomes/chr1.fa
-# ./Sequence/Chromosomes/chr4.fa
-# ./Sequence/Chromosomes/chr9.fa
-# ./Sequence/Chromosomes/chr10.fa
-# ./Sequence/Chromosomes/chr14.fa
-# ./Sequence/Chromosomes/chrX.fa
-# ./Sequence/Chromosomes/chr11.fa
-# ./Sequence/Chromosomes/chr13.fa
-# ./Sequence/Chromosomes/chr8.fa
-# ./Sequence/Chromosomes/chr7.fa
-# ./Sequence/BowtieIndex/genome.2.ebwt
-# ./Sequence/BowtieIndex/genome.rev.2.ebwt
-# ./Sequence/BowtieIndex/genome.1.ebwt
-# ./Sequence/BowtieIndex/genome.rev.1.ebwt
-# ./Sequence/BowtieIndex/genome.4.ebwt
+# ./Sequence/Bowtie2Index/genome.1.bt2 ...
+# ./Sequence/BWAIndex/version0.5.x/genome.fa.sa ...
+# ./Sequence/Chromosomes/chr5.fa ...
+# ./Sequence/BowtieIndex/genome.2.ebwt ...
+# ./Sequence/WholeGenomeFasta/genome.fa
+
+# [wilsonte@wilsonte-n1 mm10]$ find . -type f -size +100M
+# ./Annotation/Archives/archive-2015-07-17-14-33-26/Variation/snp138.txt
+# ./Annotation/Archives/archive-2013-03-06-15-06-02/Variation/snp137.txt.gz
+# ./Annotation/Archives/archive-2014-05-23-16-05-10/Variation/snp137.txt
+# ./Sequence/Bowtie2Index/genome.1.bt2 ...
+# ./Sequence/BWAIndex/version0.5.x/genome.fa.sa ...
+# ./Sequence/Chromosomes/chr5.fa ...
+# ./Sequence/BowtieIndex/genome.2.ebwt ...
 # ./Sequence/WholeGenomeFasta/genome.fa
