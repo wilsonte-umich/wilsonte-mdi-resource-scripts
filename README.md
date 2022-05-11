@@ -19,7 +19,7 @@ This repository contains scripts that can be used to
 images/instances that will run a public Stage 2 Apps web server, 
 specifically into one that has our tools suite installed:
 
-- <https://github.com/wilsontelab/wilsontelab-mdi-tools.git>
+- <https://github.com/wilsontelab/genomex-mdi-tools.git>
 
 Please see aws-mdi.md in that tools suite for complete usage information.
 
